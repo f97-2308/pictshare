@@ -1,6 +1,6 @@
 import Pictshare from '../index'
 
-jest.setTimeout(30000);
+jest.setTimeout(30000)
 
 const pictshare = new Pictshare('https://www.pictshare.net/')
 
@@ -11,7 +11,7 @@ it('base64', async () => {
     hash: 'duuy8d.jpg',
     filetype: 'jpeg',
     url: 'https://pictshare.net/duuy8d.jpg'
-  });
+  })
 })
 
 it('geturl', async () => {
@@ -21,15 +21,20 @@ it('geturl', async () => {
     hash: 'duuy8d.jpg',
     filetype: 'jpeg',
     url: 'https://pictshare.net/duuy8d.jpg'
-  });
+  })
 })
 
-it('geturl code 1020', async () => {
-  const data = await pictshare.geturl('http://i333.ntcdntempv3.com/data/images/17696/852138/001.jpg')
-  expect(data).toMatchObject({
-    status: 'ok',
-    hash: 'duuy8d.jpg',
-    filetype: 'jpeg',
-    url: 'https://pictshare.net/duuy8d.jpg'
-  });
-})
+// it('geturl code 1020', async () => {
+//   const data = await pictshare.geturl('http://i333.ntcdntempv3.com/data/images/17696/852138/001.jpg')
+//   expect(data).toMatchObject({
+//     status: 'ok',
+//     hash: 'duuy8d.jpg',
+//     filetype: 'jpeg',
+//     url: 'https://pictshare.net/duuy8d.jpg'
+//   })
+// })
+
+// it('download code 1020', async () => {
+//   const data = await pictshare.download('http://i333.ntcdntempv3.com/data/images/17696/852138/001.jpg')
+//   expect(data).toBe('')
+// })
