@@ -17,4 +17,4 @@ const data = await pictshare.geturl('https://i.picsum.photos/id/866/200/300.jpg?
 
 - [x] base64 (base64: string)
 - [x] geturl (url: string) 
-- [ ] 
+- [ ] geturl with error code 1020

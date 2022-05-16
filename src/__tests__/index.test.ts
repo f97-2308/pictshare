@@ -23,3 +23,13 @@ it('geturl', async () => {
     url: 'https://pictshare.net/duuy8d.jpg'
   });
 })
+
+it('geturl code 1020', async () => {
+  const data = await pictshare.geturl('http://i333.ntcdntempv3.com/data/images/17696/852138/001.jpg')
+  expect(data).toMatchObject({
+    status: 'ok',
+    hash: 'duuy8d.jpg',
+    filetype: 'jpeg',
+    url: 'https://pictshare.net/duuy8d.jpg'
+  });
+})
