@@ -1,20 +1,10 @@
 import axios from 'axios'
-// const uuid = () => (new Date()).getTime().toString(36)
 
 class Pictshare {
   host: string
 
   constructor (host: string) {
     this.host = host
-  }
-
-  async download (url: string) {
-    try {
-      const response = await axios.get(url)
-      console.log(response.data)
-    } catch (error) {
-      return error
-    }
   }
 
   async base64 (base64: string) {

@@ -17,5 +17,7 @@ const data = await pictshare.geturl('https://i.picsum.photos/id/866/200/300.jpg?
 
 - [x] base64 (base64: string)
 - [x] geturl (url: string) 
-- [ ] geturl with error code 1020
-- [ ] upload (file: buffer) 
+- [ ] upload (file: Buffer) 
+- [ ] pasetebin (text: string) 
+- [ ] info (hash: string)
+- [ ] remove `axios` and use node native fetch function.
